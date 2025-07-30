@@ -19,6 +19,9 @@ body {
     font-family: Mona Sans, sans-serif;
     line-height: 1.6;
     background: #3d5a80;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -37,7 +40,7 @@ body {
 }
 
 /* styling for logo */
-.logo a{
+.logo a {
     font-size: 1.2rem;
     font-family: Gravitas One, sans-serif;
     font-weight: bold;
@@ -78,17 +81,18 @@ body {
     padding: 2rem;
     max-width: 1200px;
     min-height: calc(100vh - 400px);
+    flex: 1;
 }
 
 .projects-section {
-    padding: 5rem;
-    margin-bottom: 2rem;
+    padding: 2rem;
+    margin: 2rem;
 }
 
 .projects-section h1 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     background: linear-gradient(to right, #f28367, #ff5282);
     background-clip: text;
     -webkit-background-clip: text;
@@ -178,13 +182,87 @@ body {
 }
 
 /* responsive design */
-@media (max-width: 893px) {
+@media (max-width: 768px) {
     .nav-bar {
         flex-direction: column;
         gap: 1rem;
     }
 
+    .container {
+        padding: 1rem;
+    }
+
+    .projects-section {
+        padding: 2rem 1rem;
+    }
+
+    .projects-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .projects-desc {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .projects-card {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+
+    .projects-card h4 {
+        font-size: 1.5rem;
+    }
+
+    .tag-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }    
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .projects-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .projects-section h1 {
+        font-size: 2rem;
+    }
+
+    .projects-desc {
+        font-size: 1rem;
+    }
+
+    .projects-card {
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
+    .projects-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
+    .devicon-github-original,
+    .devicon-linkedin-plain,
+    .fa-envelope {
+        font-size: 1.5rem;
     }
 }
