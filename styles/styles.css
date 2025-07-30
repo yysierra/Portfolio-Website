@@ -161,10 +161,11 @@ body {
 
 .about-title h2 {
     text-align: center;
+    font-size: 2rem;
 }
 
 .about-title span {
-    background: linear-gradient(to right, #12b3eb, #5460f9);
+    background: linear-gradient(to right, #8711c1, #2472fc);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -203,7 +204,7 @@ body {
     border: 4px solid #023E8A;
     margin-top: 1rem;
     transform: rotate(5deg);
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease;
 }
 
 .toucan-pic:hover {

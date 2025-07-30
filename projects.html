@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/dino.png">
     <title>Yahir's Portfolio</title>
     <link rel="stylesheet" href="./styles/projects.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -19,62 +20,66 @@
             <div class="logo"><a href="./index.html">yysierra</a></div>
             <nav class="nav-links">
                 <a href="./projects.html">Projects</a>
-                <a href="#resume">Resume</a>
             </nav>
         </div>
     </header>
 
     <!-- projects section  -->
-    <section class="projects-section">
-        <h1>Projects</h1>
-        <p class="projects-desc">Here, I showcase some of my projects.
-            Most, if not all,
-            of them were made for school.
-            They all link to their
-            respective repositories.</p>
-        <div class="projects-grid">
-            <div class="projects-card">
-                <h4>Portfolio Website</h4>
-                <div class="tag-container">
-                    <div class="tag">HTML</div>
-                    <div class="tag">JavaScript</div>
-                    <div class="tag">CSS</div>
-                </div>
-                <p>
-                    A personal portfolio created for CSCI355
-                </p>
+    <div class="container">
+        <section class="projects-section">
+            <h1>Projects</h1>
+            <p class="projects-desc">Here, I showcase some of my projects.
+                Most, if not all,
+                of them were made for school.
+                They all link to their
+                respective repositories.</p>
+            <div class="projects-grid">
+                <a href="https://github.com/yysierra/Portfolio-Website" class="project-link">
+                    <div class="projects-card">
+                        <h4>Portfolio Website</h4>
+                        <div class="tag-container">
+                            <div class="tag">HTML</div>
+                            <div class="tag">JavaScript</div>
+                            <div class="tag">CSS</div>
+                        </div>
+                        <p>
+                            A personal portfolio created for CSCI355
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/yysierra/N-Queens" class="project-link">
+                    <div class="projects-card">
+                        <h4>N-Queens</h4>
+                        <div class="tag-container">
+                            <div class="tag">C++</div>
+                        </div>
+                        <p>
+                            A solution to the N-Queens problem. The problem consists of
+                            placing N queens on an NxN chessboard so that no two queens
+                            attack each other
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/yysierra/Hiking-Trails" class="project-link">
+                    <div class="projects-card">
+                        <h4>Hiking Trails</h4>
+                        <div class="tag-container">
+                            <div class="tag">Java</div>
+                            <div class="tag">JavaFX</div>
+                            <div class="tag">Scenebuilder</div>
+                        </div>
+                        <p>
+                            A final project created for CSE218 utilizing common data structures for big data. The
+                            project
+                            was meant to mimic the popular <span class="italic">AllTrails</span> website.
+                        </p>
+                    </div>
+                </a>
             </div>
-
-            <a href="https://github.com/yysierra/N-Queens" class="project-link">
-                <div class="projects-card">
-                    <h4>N-Queens</h4>
-                    <div class="tag-container">
-                        <div class="tag">C++</div>
-                    </div>
-                    <p>
-                        A solution to the N-Queens problem. The problem consists of
-                        placing N queens on an NxN chessboard so that no two queens
-                        attack each other
-                    </p>
-                </div>
-            </a>
-
-            <a href="https://github.com/yysierra/Hiking-Trails" class="project-link">
-                <div class="projects-card">
-                    <h4>Hiking Trails</h4>
-                    <div class="tag-container">
-                        <div class="tag">Java</div>
-                        <div class="tag">JavaFX</div>
-                        <div class="tag">Scenebuilder</div>
-                    </div>
-                    <p>
-                        A final project created for CSE218 utilizing common data structures for big data. The project
-                        was meant to mimic the popular <span class="italic">AllTrails</span> website.
-                    </p>
-                </div>
-            </a>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- footer section -->
     <footer class="footer">
