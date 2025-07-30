@@ -1,0 +1,179 @@
+/* custom fonts */
+@font-face {
+    font-family: 'Gravitas One';
+    src: url("../fonts/GravitasOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url("../fonts/MonaSans-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Mona Sans, sans-serif;
+    line-height: 1.6;
+    background: #0D1B2A;
+}
+
+.header {
+    background: #023047;
+    padding: 1rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* styling for logo */
+.logo a{
+    font-size: 1.2rem;
+    font-family: Gravitas One, sans-serif;
+    font-weight: bold;
+    color: #FDF0D5;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+    opacity: 0.8;
+}
+
+/* nav styling */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #FDF0D5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+/* hovering effect for links */
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* styling for projects */
+
+.project-link {
+    text-decoration: none;
+}
+
+.projects-section {
+    max-width: 1200px;
+    padding: 5rem;
+    margin: 2rem;
+    min-height: calc(100vh - 400px);
+}
+
+.projects-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #3E92CC;
+}
+
+.projects-desc {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #3E92CC;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.projects-card h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.projects-card {
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem;
+    background: #33415C;
+    border: 4px solid #6D8AC5;
+    color: white;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.tag-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .8rem;
+    gap: .5rem;
+}
+
+.tag {
+    background: #415a77;
+    padding: 0 .5rem 0 .5rem;
+}
+
+
+/* styling for footer */
+.footer {
+    background: #023047;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer p {
+    color: #0096C7;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.devicon-github-original,
+.devicon-linkedin-plain,
+.fa-envelope {
+    font-size: 2rem;
+    color: white;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns:  1fr;
+    }
+}

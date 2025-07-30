@@ -1,0 +1,383 @@
+/* custom fonts */
+@font-face {
+    font-family: 'Gravitas One';
+    src: url(../fonts/GravitasOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url(../fonts/MonaSans-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+/* resets all default marigins and paddings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Mona Sans, sans-serif;
+    line-height: 1.6;
+    background: #FDF0D5;
+}
+
+.header {
+    background: #023047;
+    padding: 1rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* styling for logo */
+.logo a{
+    font-size: 1.2rem;
+    font-family: Gravitas One, sans-serif;
+    font-weight: bold;
+    color: #FDF0D5;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+    opacity: 0.8;
+}
+
+/* nav styling */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #FDF0D5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+/* hovering effect for links */
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.hero {
+    background: #addbef;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    color: #023E8A;
+    font-size: 1.7rem;
+    position: relative;
+    max-width: 800px;
+    padding: 2rem;
+    z-index: 10;
+}
+
+.hero-content span {
+    color: #0496FF;
+}
+
+/* animated cloud styling */
+.cloud-container {
+    opacity: 0.4;
+}
+
+.clouds1{
+    background-image: url("../images/clouds_1.png");
+    animation: loop1 20s infinite linear;
+}
+
+.clouds2{
+    background-image: url("../images/clouds_2.png");
+    animation: loop1 15s infinite linear;
+}
+
+.clouds3{
+    background-image: url("../images/clouds_3.png");
+    animation: loop2 17s infinite linear;
+}
+
+.clouds1,
+.clouds2,
+.clouds3 {
+    background-repeat: repeat-x;
+    height: 31.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+@keyframes loop1 {
+   to { 
+    background-position: -1000px 0;
+   } 
+}
+
+@keyframes loop1 {
+   to { 
+    background-position: -1579px 0;
+   } 
+}
+
+/* styling main section  */
+.main-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: calc(100vh - 400px);
+}
+
+.about-section {
+    background: #E76F51;
+    border-radius: 20px;
+    border: 4px solid #023E8A;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-title {
+    color: #FDF0D5;
+    text-align: center;
+}
+
+.about-title h2 {
+    text-align: center;
+}
+
+.about-title span {
+    background: linear-gradient(to right, #12b3eb, #5460f9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-content {
+    color: #FDF0D5;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #023E8A;
+    flex-shrink: 0;
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.toucan-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #023E8A;
+    margin-top: 1rem;
+    transform: rotate(5deg);
+    transition: transform 0.3 ease;
+}
+
+.toucan-pic:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+/* education section */
+.education-container {
+    background: #30638E;
+    border-radius: 20px;
+    border: 4px solid #023E8A;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-container h2 {
+    color: #8ECAE6;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.school-logo > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.education-content h3{
+    color: #FFFFFF;
+}
+
+.education-content {
+    color: rgba(255, 255, 255, .8);
+    font-size: 0.9rem;
+}
+
+/* styling techinical skills */
+.tech-section {
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem;
+    background: #0D1B2A;
+}
+
+.tech-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #6D8AC5;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.tech-category h3 {
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.devicon-python-plain,
+.devicon-cplusplus-plain,
+.devicon-java-plain,
+.devicon-javascript-plain,
+.devicon-html5-plain,
+.devicon-css3-plain,
+.devicon-latex-original,
+.devicon-vim-plain,
+.devicon-git-plain,
+.devicon-figma-plain {
+    font-size: 2.7rem;
+    color: white;
+}
+
+/* languages section */
+.languages-section {
+    text-align: center;
+}
+
+.languages-section h3 {
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.language {
+    color: rgba(255, 255, 255, .8);
+    font-size: 1.1rem;
+}
+
+/* styling footer */
+.footer {
+    background: #023047;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer p {
+    color: #0096C7;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.devicon-github-original,
+.devicon-linkedin-plain,
+.fa-envelope {
+    font-size: 2rem;
+    color: white;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .toucan-pic {
+        float: none;
+        margin: 1rem auto;
+        display: block;
+    }
+}
